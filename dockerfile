@@ -26,7 +26,8 @@ sudo n latest && \
 conda uninstall jupyterlab -y && \
 conda install jupyterlab=3.0.14 -y && \
 bash /opt/current && \
-pip install "jupyterlab-kite>=2.0.2"
+pip install "jupyterlab-kite>=2.0.2" && \
+conda install numpy pandas matplotlib -y
 
 WORKDIR /
 RUN mkdir /work
